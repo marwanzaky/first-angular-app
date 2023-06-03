@@ -5,7 +5,7 @@ import { HousingLocation } from './housinglocation';
   providedIn: 'root'
 })
 export class HousingService {
-  url = 'http://localhost:3000/locations';
+  url = 'https://first-nest-app.up.railway.app/locations';
 
   async getAllHousingLocations(): Promise<HousingLocation[]> {
     const res = await fetch(this.url);
